@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+@media screen and (max-width: 632px) {
+    body {
+        overflow-x: scroll;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}
+
+td:not(:nth-child(3)) {
+    text-align: center;
+}
+
+tr:first-child th {
+    border-bottom: 1px solid black;
+}
+
+.enroll-ok {
+    background: rgba(0, 255, 0, 0.4);
+}
+
+.enroll-likely {
+    background: rgba(0, 255, 127, 0.4);
+}
+
+.enroll-maybe {
+    background: rgba(255, 255, 0, 0.4);
+}
+
+.enroll-no {
+    background: rgba(255, 0, 0, 0.4);
+}
+
+.rank-low {
+    opacity: 0.7;
+}
+
+.rank-low td {
+    border-top: 1px solid black;
+}
+
+.rank-low ~ .rank-low td {
+    border-top: none;
+}
