@@ -57,7 +57,7 @@ tr:first-child th {
     background: rgba(255, 0, 0, 0.4);
 }
 
-.enroll-low {
+.enroll-low, .enroll-low ~ tr {
     opacity: 0.7;
 }
 
