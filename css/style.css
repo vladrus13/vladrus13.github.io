@@ -57,14 +57,14 @@ tr:first-child th {
     background: rgba(255, 0, 0, 0.4);
 }
 
-.rank-low {
+.enroll-low {
     opacity: 0.7;
 }
 
-.rank-low td {
+.enroll-low td {
     border-top: 1px solid black;
 }
 
-.rank-low ~ .rank-low td {
+.enroll-low ~ .enroll-low td {
     border-top: none;
 }
